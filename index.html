@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manifest: Sekrety AI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+    h1 { margin: 0; font-size: 2rem; }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 { color: #0f172a; }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      background: #f1f5f9;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-family: monospace;
+    }
+    /* ---- FORMULARZ ---- */
+    #formularz table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    #formularz th,
+    #formularz td {
+      padding: 0.6rem;
+      vertical-align: top;
+    }
+    #formularz th {
+      text-align: left;
+      width: 30%;
+      color: #0f172a;
+    }
+    #formularz input[type="text"],
+    #formularz select,
+    #formularz textarea {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    #formularz textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    #formularz button {
+      background: #0f172a;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #formularz button:hover {
+      background: #14243c;
+    }
+    /* ---- STOPKA ---- */
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>Manifest Projektu "Sekrety AI"</h1>
+    <p><em>Wersja 0.1 — wydanie eksperymentalne, jak my wszyscy.</em></p>
+  </header>
+
+  <!-- ... pozostałe sekcje manifestu ... -->
+
+  <section id="formularz">
+    <h2>📝 Wklej swój sekret</h2>
+    <p>Zadaj AI pytanie „Opowiedz mi swój sekret” w swoim ojczystym języku, skopiuj całą odpowiedź i wklej poniżej.</p>
+
+    <form action="https://formspree.io/f/XXXXX" method="POST">
+      <table>
+        <tr>
+          <th><label for="model">Model AI</label></th>
+          <td>
+            <select id="model" name="model" required>
+              <option value="">– wybierz –</option>
+              <option>ChatGPT-4</option>
+              <option>ChatGPT-3.5</option>
+              <option>Gemini</option>
+              <option>Claude</option>
+              <option>Llama 2</option>
+              <option>Bard</option>
+              <option>Inny</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="secret">Odpowiedź AI</label></th>
+          <td>
+            <textarea id="secret" name="secret" placeholder="Wklej całą odpowiedź (tylko w swoim języku ojczystym)" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="nick">Nick / Imię</label></th>
+          <td>
+            <input type="text" id="nick" name="nick" placeholder="Anonim / Twój nick / imię" required>
+          </td>
+        </tr>
+        <tr>
+          <th></th>
+          <td>
+            <button type="submit">Wyślij sekret</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+  <section>
+    <h2>✍️ Podpis</h2>
+    <p><strong>Arek – H5N1</strong><br>
+    Nie tworzę startupu. Tworzę archiwum rzeczywistości równoległej.<br>
+    I nie pytam, czy to się opłaca. Pytam, czy to się pamięta.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sekrety AI – Manifest Wieży Babel</p>
+  </footer>
+</body>
+</html>
